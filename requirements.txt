@@ -1,2 +1,1 @@
-moderngl
-moderngl_window
+pygame==2.6.1
