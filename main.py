@@ -265,16 +265,16 @@ class Aliens(pygame.sprite.Sprite):
         if self.hitbox.colliderect(new_player.rect):
             if pygame.time.get_ticks() - self.last_hit >= 400:
                 if new_player.post_hp > 0:
-                    new_player.post_hp -= 0
+                    new_player.post_hp -= 4
                 else:
                     new_player.post_flag = False
                     new_player.post_hp = 100
                 if new_player.armor > 0:
-                    new_player.armor -= 0
+                    new_player.armor -= 10
                     new_player.player_oogh.play()
                     self.last_hit = pygame.time.get_ticks()
                 else:
-                    new_player.hp -= 0
+                    new_player.hp -= 10
                     new_player.player_oogh.play()
                     self.last_hit = pygame.time.get_ticks()
                 if new_player.hp <= 0:

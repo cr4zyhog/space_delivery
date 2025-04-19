@@ -54,7 +54,7 @@ class Menu:
                 sys.exit()
             elif self.button_press == 'Play':
                 pygame.mixer.stop()
-                main.main(self.levels[0], 'pulemet', self.level_count)
+                main.main(self.levels[0], 'pistol', self.level_count)
             elif self.button_press == 'Stats':
                 self.flag_stats = True
                 with open('stats.csv', encoding="utf8") as csvfile:

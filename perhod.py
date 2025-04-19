@@ -150,7 +150,7 @@ class Player(pygame.sprite.Sprite):
                 if i.rect.centery >= 2300 or i.rect.centery <= -380:
                     continue
                 if pygame.sprite.collide_mask(self, i):
-                    # self.is_die = True
+                    self.is_die = True
                     self.boom.play()
             if pygame.sprite.spritecollideany(self, end_group):
                 self.end = True
