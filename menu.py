@@ -18,7 +18,7 @@ class Menu:
         self.render = 0
         self.spis = []
         self.flag_stats = False
-        self.level_count = 4
+        self.level_count = 0
         self.levels = [['levels/level0.txt', 'levels/level0_space.txt'],
                        ['levels/level1.txt', 'levels/level1_space.txt'],
                        ['levels/level2.txt', 'levels/level2_space.txt'],
